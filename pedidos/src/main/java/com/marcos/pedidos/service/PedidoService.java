@@ -5,12 +5,12 @@ import com.marcos.pedidos.dto.StatusDto;
 import com.marcos.pedidos.model.Pedido;
 import com.marcos.pedidos.model.Status;
 import com.marcos.pedidos.repository.PedidoRepository;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
